@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Algebra 2 Practice Problem Machine | yourTutor</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="algebra2-ppm.js"></script>
+  <link rel="icon" href="images/ytHat.png" type="image/png">
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="images/yTlogo.png" alt="yourTutor Logo" class="logo" />
+    </a>
+  </header>
+
+  <nav class="bookmark-bar">
+    <a href="index.html" class="bookmark-item">Home</a>
+    <a href="about.html" class="bookmark-item">About</a>
+    <a href="planner.html" class="bookmark-item">Your Planner</a>
+  </nav>
+
+  <main class="content">
+    <h1 class="subject-heading">🧠 Practice Problem Machine</h1>
+    <p class="subject-subheading">Answer randomly selected questions, get instant feedback, and level up your learning.</p>
+    <a href="algebra2.html" class="back-button">← Back to Algebra 2</a>
+
+
+    <section class="ppm-container">
+      <div class="ppm-box">
+        <h2 id="question">Question will appear here</h2>
+
+        <div class="answer-buttons">
+          <button id="answer-button1" class="answer-btn">A</button>
+          <button id="answer-button2" class="answer-btn">B</button>
+          <button id="answer-button3" class="answer-btn">C</button>
+          <button id="answer-button4" class="answer-btn">D</button>
+        </div>
+
+        <input id="answer-input" class="answer-input" type="text" placeholder="Type your full answer here..." />
+        <button id="submit-button" class="card-button">Submit</button>
+        <p id="answer-text" class="feedback-text"></p>
+
+        <div class="score-panel">
+          <div class="score-box">✅ Correct: <span id="left-x">0</span></div>
+          <div class="score-box">❌ Incorrect: <span id="right-x">0</span></div>
+        </div>
+
+        <button id="next-button" class="card-button next-btn">Next Question</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
